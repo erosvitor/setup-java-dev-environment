@@ -1,0 +1,34 @@
+
+## About
+Preparing the Kubernetes tools.
+
+## Steps
+
+### Install kubectl
+```
+$ snap install kubectl --classic
+```
+
+### Setup kubectl
+- Get configuration with technical support in your organization
+
+### Main commands
+- Get namespaces
+```
+$ kubectl get namespaces
+```
+
+- Get contexts
+```
+$ kubectl config get-contexts
+```
+
+- Show current context
+```
+$ kubectl config current-context
+```
+
+- Change context
+```
+$ kubectl config use-context <context-name>
+```
