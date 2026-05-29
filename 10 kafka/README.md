@@ -1,13 +1,12 @@
 
 ## About
-Preparing the Kafka environment.
+Preparing Kafka environment.
 
-## Steps
+## Steps 
 
 ### Dockerfile
+Create file named kafka.yaml
 ```
-version: '3'
-
 services:
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
@@ -52,4 +51,35 @@ networks:
     driver: bridge
     name: kafka
 ```
+### Container
+Create container
+```
+docker compose -f kafka.yaml up -d
+```
 
+### Testing
+
+Create topic
+```
+$ kafka-topics --create --topic helloworld --bootstrap-server localhost:9092
+```
+
+List topics
+```
+$ kafka-topics --list --bootstrap-server localhost:9092
+```
+
+Details from topic
+```
+$ kafka-topics --describe --topic helloworld --bootstrap-server localhost:9092
+```
+
+Produce message
+```
+$ kafka-console-producer --topic helloworld --bootstrap-server localhost:9092
+```
+
+Consume message
+```
+$ kafka-console-consumer --topic helloworld --from-beginning --bootstrap-server localhost:9092
+```
