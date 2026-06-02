@@ -27,3 +27,12 @@ $ cat ~/.aws/credentials
 
 $ aws sts get-caller-identity
 ```
+
+### Application Load Balance
+
+- VPC
+- Security group for EC2
+- Two or more EC2
+- Target group
+- Security group for Load Balance
+- Application Load balance
