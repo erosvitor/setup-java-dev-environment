@@ -1,35 +1,33 @@
 
-## About
+# About
 Preparing the Ubuntu Linux Operating System.
 
-## Steps
+# Steps
 
-### Update operating system
+## Update operating system
 ```
 $ sudo apt update
 $ sudo apt upgrade
 ```
 
-### Install basic tools
+## Install basic tools
 
-#### Text Editor
+### Text Editor
 ```
 $ sudo apt install notepadqq
 ```
 
-#### Image Editor
+### Image Editor
 ```
 $ sudo apt install gimp
 ```
 
-#### Audio Editor
+### Audio Editor
 ```
 $ sudo apt install audacity
 ```
 
-#### Audio/Video Player/Converter
+### Audio/Video Player/Converter
 ```
 $ sudo apt install vlc
 ```
-
-
