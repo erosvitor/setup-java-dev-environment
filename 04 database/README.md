@@ -1,10 +1,10 @@
 
-## About
+# About
 Preparing the database environment.
 
-## Steps
+# Steps
 
-### Install DBeaver
+## Install DBeaver
 - Install DBeaver in /opt folder
 
 - Create file named dbeaver.desktop in ~/Desktop folder.
@@ -22,7 +22,7 @@ Icon=/opt/dbeaver/dbeaver.png
 
 - Now on the desktop again right-click on the dbeaver.desktop item and select Allow Lauching
 
-### Docker Compose for MySQL
+## Docker Compose for MySQL
 1 - Create file named **docker-compose-mysql8.yaml**
 ```
 services:
@@ -93,7 +93,7 @@ allowPublicKeyRetrieval = true
 docker compose -f docker-compose-mysql8.yaml down
 ```
 
-### Docker Compose for Postgres
+## Docker Compose for Postgres
 1 - Create file named **docker-compose-postgres17.yaml**
 ```
 services:
