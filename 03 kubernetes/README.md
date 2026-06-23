@@ -32,3 +32,13 @@ $ kubectl config current-context
 ```
 $ kubectl config use-context <context-name>
 ```
+
+- Get PODs from namespace
+```
+$ kubectl get pods --namespace <namespace>
+```
+
+- Show change of PODs
+```
+$ watch -n 1 kubectl get pods --namespace <namespace>
+```
