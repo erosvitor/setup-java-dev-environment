@@ -1,13 +1,13 @@
 
-## About
+# About
 Preparing the Java environment.
 
-## Steps
+# Steps
 
-### Install Java
+## Install Java
 - Install JDK
 
-### Create shortcut for jconsole
+## Create shortcut for jconsole
 - Create file named jconsole.desktop in ~/Desktop folder.
 ```
 [Desktop Entry]
@@ -22,10 +22,10 @@ Exec=/usr/lib/jvm/jdk-<VERSION>/bin/jconsole
 
 - Now on the desktop again right-click on the jconsole.desktop item and select Allow Lauching
 
-### Install IDE
-- Install IntelliJ in /opt folder
+## Install IDE
+- Install **IntelliJ** in /opt folder
 
-### Create shortcut
+## Create shortcut for IDE
 - Create file named intellij.desktop in ~/Desktop folder.
 ```
 [Desktop Entry]
@@ -41,3 +41,10 @@ Icon=/opt/intellij/bin/idea.png
 
 - Now on the desktop again right-click on the intellij.desktop item and select Allow Lauching
 
+## Install IntelliJ plugings
+- SonarQube for IDE
+- CodeMetrics
+- Cucumber +
+- Cucumber for Java
+- Gherkin
+- GitHub Copilot
