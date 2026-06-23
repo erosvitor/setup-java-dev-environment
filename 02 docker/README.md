@@ -1,11 +1,11 @@
 
-## About
+# About
 Preparing the Docker container.
 
-## Steps
+# Steps
 
-### Install Docker
+## Install Docker
 - See https://docs.docker.com/engine/install/
 
-### Install Docker Compose
+## Install Docker Compose
 - See https://docs.docker.com/compose/install/standalone/
