@@ -1,16 +1,17 @@
-## About
+
+# About
 Preparing the AWS environment.
 
-## Steps
+# Steps
 
-### Install AWS CLI
+## Install AWS CLI
 ```
 $ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 $ unzip awscliv2.zip
 $ sudo ./aws/install
 ```
 
-### Configure AWS CLI
+## Configure AWS CLI
 ```
 $ aws configure
 
@@ -28,7 +29,7 @@ $ cat ~/.aws/credentials
 $ aws sts get-caller-identity
 ```
 
-### Application Load Balance
+# Setting an Application Load Balance
 
 - VPC
 - Security group for EC2
