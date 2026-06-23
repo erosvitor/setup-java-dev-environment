@@ -1,10 +1,10 @@
 
-## About
+# About
 Preparing Kafka environment.
 
-## Steps 
+# Steps 
 
-### Dockerfile
+## Dockerfile
 Create file named kafka.yaml
 ```
 services:
@@ -51,13 +51,14 @@ networks:
     driver: bridge
     name: kafka
 ```
-### Container
+
+## Container
 Create container
 ```
 docker compose -f kafka.yaml up -d
 ```
 
-### Testing
+## Testing
 
 Create topic
 ```
