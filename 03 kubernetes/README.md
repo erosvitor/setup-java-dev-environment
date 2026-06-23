@@ -1,18 +1,18 @@
 
-## About
+# About
 Preparing the Kubernetes tools.
 
-## Steps
+# Steps
 
-### Install kubectl
+## Install kubectl
 ```
 $ snap install kubectl --classic
 ```
 
-### Setup kubectl
+## Setup kubectl
 - Get configuration with technical support in your organization
 
-### Main commands
+# Main commands for kubectl
 - Get namespaces
 ```
 $ kubectl get namespaces
