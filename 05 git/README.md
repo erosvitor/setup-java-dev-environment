@@ -1,20 +1,22 @@
 
-## About
+# About
 Preparing the git environment.
 
-## Steps
+# Steps
 
-### Install Git and Tools
+## Install Git and Tools
 ```
 $ sudo apt install git
 $ sudo apt install git-cola
 ```
 
-### Merge tool
+## Install and config merge tool
 ```
 $ sudo apt install meld
 $ git config --global merge.tool meld
 ```
+
+## SSH Key
 
 ### Create SSH key
 ```
@@ -59,9 +61,9 @@ $ cat << EOF | tee -a ~/.ssh/config
 $ ssh -T git@github.com
 ```
 
-## Using Git
+# Using Git
 
-### Basic
+## Basic
 Initializing GIT repository
 ```
 $ git init
@@ -114,7 +116,7 @@ Sending commits to remote server
 $ git push -u origin main
 ```
 
-### Branches
+## Branches
 
 Criando uma branch local
 ```
@@ -137,7 +139,7 @@ Removendo a branch do servidor remoto
 $ git push --delete origin <nome-branch>
 ```
 
-### Merge
+## Merge
 
 Cancelar um merge que tenha dado conflito
 ```
@@ -148,7 +150,7 @@ $ git merge --abort
 $ git reset --hard
 ```
 
-### Rebase
+## Rebase
 
 Fazendo rebase que não gere conflito
 ```
@@ -174,7 +176,7 @@ $ git add .
 $ git rebase --continue
 ```
 
-### Commit
+## Commit
 
 Corrigindo a mensagem de commit
 ```
@@ -198,7 +200,7 @@ Voltando para o último commit
 $ git checkout master
 ```
 
-### Undo changes
+## Undo changes
 
 Como desfazer alterações de arquivos untracked?
 ```
