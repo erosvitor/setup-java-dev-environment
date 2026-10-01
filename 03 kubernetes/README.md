@@ -13,32 +13,46 @@ $ snap install kubectl --classic
 - Get configuration with technical support in your organization
 
 # Main commands for kubectl
-- Get namespaces
-```
-$ kubectl get namespaces
-```
-
-- Get contexts
+Get contexts
 ```
 $ kubectl config get-contexts
 ```
 
-- Show current context
+Get namespaces from specific context
 ```
-$ kubectl config current-context
-```
-
-- Change context
-```
-$ kubectl config use-context <context-name>
+$ kubectl get namespaces --context=<context-name>
 ```
 
-- Get PODs from namespace
+Get PODs from specific namespace
 ```
-$ kubectl get pods --namespace <namespace>
+$ kubectl get pods --context=<context-name> --namespace <namespace>
 ```
 
-- Show change of PODs
+Get PODs details from specific namespace
 ```
-$ watch -n 1 kubectl get pods --namespace <namespace>
+$ kubectl get pods -o wide --context=<context-name> --namespace <namespace-name>
 ```
+
+Get PODs CPU, memory and swap from specific namespace
+```
+$ kubectl top pod --containers --show-swap --context=<context-name> --namespace <namespace-name>
+```
+
+Viewing pod replacement
+```
+$ watch -n 1 kubectl get pods --context=<context-name> --namespace <namespace>
+```
+
+Logs from specific POD
+```
+$ kubectl logs <pod-name> --context=<context-name> --namespace <namespace-name>
+```
+
+Status from specific POD
+```
+$ kubectl get pod <pod-name> -o wide --context=<context-name> --namespace=<namespace>
+```
+
+Details from specific POD
+```
+$ kubectl describe pod <pod-name> --context=<context-name> --namespace account-block
