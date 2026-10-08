@@ -7,6 +7,25 @@ Preparing the Java environment.
 ## Install Java
 - Install JDK
 
+## Install certificates
+
+### Download
+```
+sudo curl -k -sL <endereço-certificado/certificado.cer> -o /tmp/certificado.pem
+```
+
+### Install in Java
+```
+sudo $JAVA_HOME/bin/keytool -import -file /tmp/certificado.pem -alias certificado -keystore $JAVA_HOME/lib/security/cacerts -trustcacerts -noprompt
+```
+
+### Install in Linux
+```
+sudo cp /tmp/certificado.pem /usr/local/share/ca-certificates/certificado.pem
+
+sudo update-ca-certificates --fresh
+```
+
 ## Create shortcut for jconsole
 - Create file named jconsole.desktop in ~/Desktop folder.
 ```
